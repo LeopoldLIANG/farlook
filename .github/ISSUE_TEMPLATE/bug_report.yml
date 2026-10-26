@@ -1,0 +1,41 @@
+name: 问题反馈 / Bug report
+description: 计时、提醒或界面出现问题 / Report a timer, reminder, or UI problem
+title: "[Bug] "
+body:
+  - type: input
+    id: environment
+    attributes:
+      label: 系统与版本 / Environment
+      description: macOS 版本、芯片类型、应用版本 / macOS, chip, app version
+      placeholder: macOS 26.3.1, Apple M1, FarLook 0.2.0
+    validations:
+      required: true
+  - type: dropdown
+    id: idle-rule
+    attributes:
+      label: 无操作判定 / Idle rule
+      options:
+        - 2 分钟 / 2 minutes
+        - 5 分钟 / 5 minutes
+        - 10 分钟 / 10 minutes
+        - 仅锁屏或睡眠 / Lock or sleep only
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤 / Steps to reproduce
+      description: 涉及锁屏、睡眠、全屏或多显示器时请注明。/ Mention lock, sleep, fullscreen, or multiple displays.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: 预期与实际行为 / Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 补充信息 / Additional context
+      description: 可附应用窗口截图；请去除个人信息。/ App-only screenshots welcome; remove private information.

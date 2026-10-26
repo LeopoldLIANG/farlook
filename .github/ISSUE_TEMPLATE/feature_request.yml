@@ -1,0 +1,22 @@
+name: 功能建议 / Feature request
+description: 分享一个具体使用场景或改进想法 / Suggest an improvement
+title: "[Idea] "
+body:
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 使用场景 / Use case
+      description: 你在做什么，当前哪里不方便？ / What are you doing, and what is difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 期望改进 / Proposed improvement
+    validations:
+      required: true
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: 替代方案与影响 / Alternatives and tradeoffs
+      description: 选填，可讨论提醒频率、干扰或隐私影响。/ Optional: frequency, interruption, or privacy effects.
