@@ -4,13 +4,13 @@
 
 A lightweight, local macOS menu bar app that reminds you to look into the distance for **30 seconds** after **30 minutes** of continuous computer use.
 
-[中文说明](README.md) · [Contributing](CONTRIBUTING.md) · [Changelog](CHANGELOG.md)
+[中英对照 / Bilingual README](README.md) · [Download](https://github.com/LeopoldLIANG/farlook/releases/latest) · [Contributing](CONTRIBUTING.md) · [Changelog](CHANGELOG.md)
 
 ## Install
 
 Download `FarLook-v0.2.0-macOS-arm64.zip` from this repository's **Releases**, unzip it, and move the app into Applications. Open it to see the eye symbol and remaining time in the menu bar. No persistent Dock icon is shown.
 
-Requires **Apple Silicon and macOS 13 or later**. Built and checked on macOS 26.3.1; other versions, fullscreen apps, and multiple displays need further field testing. The app is ad-hoc signed, not Apple notarized. If macOS blocks it, review and build the source or follow the system's Privacy & Security prompts. Do not disable Gatekeeper. Launch at login is not configured.
+Requires **Apple Silicon and macOS 13 or later**. The app interface is currently in Simplified Chinese. Built and checked on macOS 26.3.1; other versions, fullscreen apps, and multiple displays need further field testing. The app is ad-hoc signed, not Apple notarized. If macOS blocks it, review and build the source or follow the system's Privacy & Security prompts. Launch at login is not configured.
 
 ## How continuous use is measured
 
@@ -29,7 +29,7 @@ No network access, camera, input-content capture, app-usage logging, or activity
 
 ## Feedback
 
-Use **Issues** for bug reports and feature requests; templates accept English or Chinese. Use **Discussions**, once enabled for the repository, for open-ended ideas. Pull requests are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md). Avoid sharing private files or full-desktop screenshots. Response times and acceptance of suggestions are not guaranteed.
+Use [Issues](https://github.com/LeopoldLIANG/farlook/issues/new/choose) for bug reports and feature requests; templates accept English or Chinese. Use [Discussions](https://github.com/LeopoldLIANG/farlook/discussions) for open-ended ideas. Pull requests are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md). When sharing screenshots, include only the relevant app window and remove personal information.
 
 ## Build and check
 
