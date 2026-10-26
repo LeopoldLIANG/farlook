@@ -1,0 +1,27 @@
+name: Build and timing checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  macos:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check timer boundaries
+        run: zsh scripts/test.sh
+      - name: Build arm64 app and validate signature
+        run: |
+          zsh build.sh
+          codesign --verify --strict --verbose=2 build/远眺一下.app
+          plutil -lint build/远眺一下.app/Contents/Info.plist
+      - name: Package app
+        run: ditto -c -k --sequesterRsrc --keepParent build/远眺一下.app build/FarLook-macOS-arm64.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: FarLook-macOS-arm64
+          path: build/FarLook-macOS-arm64.zip
+          retention-days: 14
