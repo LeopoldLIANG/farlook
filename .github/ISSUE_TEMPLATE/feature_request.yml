@@ -19,4 +19,4 @@ body:
     id: tradeoffs
     attributes:
       label: 替代方案与影响 / Alternatives and tradeoffs
-      description: 选填，可讨论提醒频率、干扰或隐私影响。/ Optional: frequency, interruption, or privacy effects.
+      description: "选填，可讨论提醒频率、干扰或隐私影响。/ Optional: frequency, interruption, or privacy effects."
